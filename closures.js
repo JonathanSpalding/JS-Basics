@@ -126,3 +126,21 @@ var callFriend = function(){
 */
 
 
+// toy problem:
+// write a function that takes in an array, reverses it, and returns the reverse
+function reverseArray(arr){
+	arr.reverse();
+	return arr;
+}
+var numbersArray = [1, 2, 3, 4, 5, 6, 7];
+reverseArray(numbersArray);
+
+
+// or
+function reverseRewrite(arr) {
+  var newArray = [];
+  for (var i = (arr.length - 1); i >=0; i--){
+    newArray.push(arr[i]);
+  }
+  return newArray;
+}
